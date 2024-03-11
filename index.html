@@ -11,6 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- tailwind custom classes -->
 	<script>
 		tailwind.config = {
@@ -53,12 +54,12 @@
 				  <h1 class="btn btn-ghost text-xl lg:text-4xl">Hockey<span class="text-hockey-primary">’</span>s</h1>
 				</div>
 				<div class="navbar-center hidden lg:flex">
-				  <ul class="menu menu-horizontal px-1">
-					<li><a>Home</a></li>
-					<li><a>About</a></li>
-					<li><a>Page</a></li>
-					<li><a>Blog</a></li>
-					<li><a>Contact</a></li>
+				  <ul class="menu menu-horizontal px-1 ">
+					<li class="hover:text-orange-700"><a>Home</a></li>
+					<li class="hover:text-orange-700"><a>About</a></li>
+					<li class="hover:text-orange-700"><a>Page</a></li>
+					<li class="hover:text-orange-700"><a>Blog</a></li>
+					<li class="hover:text-orange-700"><a>Contact</a></li>
 				  </ul>
 				</div>
 				<div class="navbar-end ">
@@ -67,8 +68,11 @@
 			  </div>
 		</nav>
 		<!-- navbar section ended -->
-		<!-- slider section started -->
-	<div class=" container mx-auto lg:px-26 px-8">
+	</header>
+	<main class="w-full">
+	  <section id="slider">
+        <!-- slider section started -->
+	   <div class=" container mx-auto lg:px-26 px-8">
 		<div class="carousel w-full">
 			<!-- slide-1 -->
 			<div id="slide1" class="carousel-item relative w-full">
@@ -92,65 +96,72 @@
 		   <p class="text-white text-sm">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
 		  </div>
 	</div>
-	<!-- slider section ended8 -->
-	</header>
-	<main class="md:container md:mx-auto">
-    <SECtion class="container mx-auto lg:px-26 px-8">
-		<DIv class="text-center">
-        <h2 class=" text-xl lg:text-4xl">Program Sections</h2>
-		<p class="text-sm mt-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
-		</DIv>
-		<DIV>
-        <div>
-			<div class="grid grid-cols-1 lg:grid-cols-2 gap-4 h-48 mt-10">
-
-				<!-- First column with two background images -->
-				<div class="rounded h-[200] w-[300] lg:h-[338px] lg:w-[573] bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./Images/2.png'), url('second-image.jpg');">
-					<div class="text-white ml-10 mt-20 gap-4">
-						<h2 class="text-4xl">Junior Program</h2>
-					<p class="mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-					enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-					<button class="btn btn-wide border-none text-white  bg-hockey-primary mt-4">Secondary</button>	
-					</div>
-				</div>
-			  
-				<div class="rounded lg:h-[338px] w-[573] bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./Images/3.png'), url('second-image.jpg');">
-					<div class="text-white ml-10 mt-20 gap-4">
-						<h2 class="text-4xl">Teenager Program</h2>
-					<p class="mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-					enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-					<button class="btn lg:btn-wide border-none text-white  bg-hockey-primary mt-4">Secondary</button>	
-					</div>
-				</div>
-			  
-				<!-- Second column with background image spanning two columns -->
-				<div class="col-span-2 rounded bg-center bg-cover  lg:w-[1200ox] lg:h-[450px]" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./Images/4.png');">
-					<div class="text-white ml-10 mt-60 gap-4">
-						<h2 class="text-4xl">Junior Program</h2>
-					<p class="mt-4 ">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br> 
-					enim sagittis turpis in magna. Id et sed euismod natoque amet nunc<br>morbi nulla. Tortor congue sed et in.</p>
-					<button class="btn lg:btn-wide border-none text-white  bg-hockey-primary mt-4">Secondary</button>	
-					</div>
-				</div>
-			  
-			  </div>
+	<!-- slider section ended -->
+	<section class="container mx-auto lg:px-26 px-8">
+		<div class="text-center">
+			<h2 class="text-xl lg:text-4xl">Program Sections</h2>
+			<p class="text-sm mt-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
 		</div>
-		<div>
-
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
+			<!-- First column with two background images -->
+			<div class="rounded bg-center h-96 lg:h-[338px] w-full lg:w-[573px] bg-cover relative" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./Images/2.png');">
+				<div class="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+					<h2 class="text-4xl">Junior Program</h2>
+					<p class="mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+					<button class="btn btn-wide border-none text-white bg-hockey-primary mt-4">Secondary</button>
+				</div>
+			</div>
+	
+			<div class="rounded bg-center h-96 lg:h-[338px] w-full lg:w-[573px] bg-cover relative" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./Images/3.png');">
+				<div class="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+					<h2 class="text-4xl">Teenager Program</h2>
+					<p class="mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+					<button class="btn btn-wide border-none text-white bg-hockey-primary mt-4">Secondary</button>
+				</div>
+			</div>
+	
+			<!-- Second column with background image spanning two columns -->
+			<div class="col-span-2 rounded bg-center bg-cover lg:h-[450px] w-full" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./Images/4.png');">
+				<div class="text-white mx-10 my-20">
+					<h2 class="text-4xl">Junior Program</h2>
+					<p class="mt-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br> enim sagittis turpis in magna. Id et sed euismod natoque amet nunc<br>morbi nulla. Tortor congue sed et in.</p>
+					<button class="btn btn-wide border-none text-white bg-hockey-primary mt-4">Secondary</button>
+				</div>
+			</div>
 		</div>
-		</DIV>
-	</SECtion>
-	<section>
-		
-
-
-
-
-		  
 	</section>
-	</main>
-	<footer>
+	
+	<section>
+		<h2>efdrggh</h2>
+	</section>
+</main>
 
-	</footer>
 </body>
-</html>
+</html>  <footer class="footer p-20 w-[1400px] h-[450px] bg-neutral text-neutral-content bg-black">
+	<nav class="w-[340px] h-[220px]">
+	  <h6 class="footer-title text-xl">Get In Touch</h6> 
+	  <p>Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+	  <i class="fa-solid fa-envelope"> : hockeys@support.com</i>
+	  <i class="fa-solid fa-phone-volume"> : (+62) 123-321-543</i>
+	</nav> 
+	<nav>
+	  <h6 class="footer-title">Company</h6> 
+	  <a class="link link-hover">about us</a>
+	  <a class="link link-hover">leadership</a>
+	  <a class="link link-hover">Marketing</a>
+	  <a class="link link-hover">Advertisement</a>
+	</nav> 
+	<nav>
+	  <h6 class="footer-title">Suports</h6> 
+	  <a class="link link-hover">About us</a>
+	  <a class="link link-hover">Contact</a>
+	  <a class="link link-hover">Jobs</a>
+	  <a class="link link-hover">Press kit</a>
+	</nav> 
+	<nav>
+	  <h6 class="footer-title">services</h6> 
+	  <a class="link link-hover">Terms of use</a>
+	  <a class="link link-hover">Privacy policy</a>
+	  <a class="link link-hover">Cookie policy</a>
+	</nav>
+  </footer>
